@@ -1,0 +1,265 @@
+.nav {
+    position: absolute;
+    top: 0;
+    background-color: #ffe32b;
+}
+
+.nav-item {
+    margin: auto 3vw;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-brand div {
+    font-size: 10px;
+}
+
+.navbar-brand img {
+    transform: scale(1.3);
+    margin: 10px;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.container-1 {
+    background-color: #ffe32b;
+    height: 100vh;
+}
+
+.container-2 {
+    /* position: absolute; */
+    color: white;
+    height: 100vh;
+    width: 100%;
+    /* bottom: 0; */
+    font-size: 1000px;
+    font-weight: bold;
+    z-index: 3;
+    border: 2px solid tomato;
+    display: flex;
+    justify-self: center;
+    background-color: black;
+}
+
+.YEC {
+    margin: auto 0;
+    margin-left: 10vh;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+    /* or 129% */
+    color: #000000;
+
+}
+
+@media screen and (max-width:900px) {
+    .YEC {
+        font-size: 29px;
+        margin-left: 5px;
+    }
+}
+
+.container-3 {
+    /* width: 100%; */
+    background: url(images/ran-berkovich-kSLNVacFehs-unsplash\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    padding: 10vw;
+}
+
+.about {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about>div>h1 {
+    font-size: 40px;
+    border-bottom: 4px solid yellow;
+}
+
+.about>div>p {
+    font-size: 20px;
+}
+
+.timeline-1 {
+    background: url(images/timeline.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    min-height: 300vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset;
+}
+.timeline-1 img{
+    padding: 0px 15vw;
+    padding-top: 0px;
+    
+}
+
+@media screen and (max-width:900px) {
+    .timeline-1 img{
+        padding: 10px;
+    }
+}
+.incentives{
+    height: 100%;
+}
+.incentives h1 {
+    text-align: center;
+    font-weight: 700px;
+    /* font-size: 64px; */
+    color: black;
+}
+
+.incentives h1:nth-child(1) {
+    font-size: 64px;
+}
+
+.incentives h1:nth-child(2) {
+    font-size: 30px;
+}
+
+.incentives h1:nth-child(3) {
+    font-size: 30px;
+}
+
+.incentives-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: start;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 10vw; */
+    padding: 0 100px;
+}
+
+.incentives-box {
+    width: 279px;
+    height: 237px;
+    background: #F1F3F2;
+    border-radius: 13px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.incentives-box img{
+    width: 92px;
+    /* height: 92px; */
+    margin: 10px;
+    padding: 10px;
+    /* aspect-ratio: 1/1; */
+}
+.incentives-box div{
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+.termsNConditions{
+    color: white;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.termsNConditions h1{
+    text-align: center;
+    font-size: 64px;
+}
+.termsNConditions ul{
+    padding: 10px 20vw;
+    font-size: 30px;
+    line-height: 38px;
+}
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    box-shadow: -4px 3px 0 #ffe32b, -4px -3px 0 #ffe32b, 2px 0px 0 3px #ffe32b;
+  }
+  
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+.judging{
+    background-color: black;
+    color: white;
+    min-height: 100vh
+}
+.judging h1{
+    text-align: center;
+    font-size: 64px;
+}
+.judging span{
+    font-size: 30px;
+}
+.contact-us{
+    background-image: url(./images/contactUs.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: black;
+    /* box-shadow: inset 5px 17px 9px 1px black,inset -5px -5px 9px black; */
+}
