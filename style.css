@@ -87,7 +87,7 @@ body{
     background-position-x: 0px;
     background-attachment: fixed;
     background-size: cover;
-    animation: infinite_scroll 20s ease-in-out infinite;
+    animation: infinite_scroll 10s linear infinite;
 }
 @keyframes infinite_scroll{
     from{
@@ -185,7 +185,12 @@ body{
         width: 100%;
     }
     .about>div>h1{
-        font-size: 35px;
+        font-size: 26px;
+    }
+    .about>div>p{
+        font-size: 17px;
+        padding: 15px 0;
+        text-align: justify;
     }
 }
 
@@ -255,12 +260,6 @@ body{
     padding: 0 100px;
     font-family: 'Inknut Antiqua', serif;
 }
-@media screen and (max-width:430px){
-    .incentives-boxes{
-        padding: 0 10px;
-    }
-}
-
 .incentives-box {
     width: 279px;
     height: 237px;
@@ -270,6 +269,23 @@ body{
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width:430px){
+    .incentives-boxes{
+        padding: 0 10px;
+    }
+    .incentives-box{
+        margin: 20px;
+    }
+    .incentives h1:nth-child(1) {
+        font-size: 40px;
+    }
+    
+    .incentives h1:nth-child(2) {
+        font-size: 25px;
+    }
+}
+
+
 .incentives-box img{
     width: 92px;
     /* height: 92px; */
@@ -303,11 +319,13 @@ body{
 }
 @media screen and (max-width:500px) {
     .termsNConditions h1{
-        font-size: 42px;
+        font-size: 26px;
     }
     .termsNConditions ul{
-        font-size: 20px;
+        font-size: 17px;
         padding: 10px 8vw;
+        line-height: 27px;
+        text-align: justify;
     }
 }
 .accordion {
@@ -387,18 +405,22 @@ body{
 }
 @media screen and (max-width:500px) {
     .rules h1{
-        font-size: 42px;
+        font-size: 26px;
     }
     .rules ul{
         padding: 10px 10vw;
-        font-size: 20px;
+        font-size: 17px;
+        text-align: justify;
+    }
+    .judging h1{
+        font-size: 26px;
     }
 }
 .contact-us{
     background-image: url(./images/contactUs.png);
     background-size: cover;
     /* background-repeat: no-repeat; */
-    min-height: 65vh;
+    min-height: 75vh;
     background-color: black;
     background-position: center;
     color: white;
