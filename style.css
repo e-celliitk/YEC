@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
 *{
     margin: 0;
     padding: 0;
     outline: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -121,6 +129,7 @@
     .YEC {
         font-size: 29px;
         margin-left: 5px;
+        line-height: 30px;
     }
 }
 
@@ -132,6 +141,29 @@
     min-height: 100vh;
     color: white;
     padding: 10vw;
+    position: relative;
+}
+.symbols{
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background:url(./images/symbols.png);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+}
+.symbols2{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background:url(./images/questionMark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .about {
@@ -159,7 +191,7 @@
 }
 
 .timeline-1 {
-    background: url(images/timeline.jpg);
+    background: url(images/timeline\ \(1\).jpg);
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -218,6 +250,7 @@
     height: 100%;
     /* margin: 0 10vw; */
     padding: 0 100px;
+    font-family: 'Inknut Antiqua', serif;
 }
 @media screen and (max-width:430px){
     .incentives-boxes{
@@ -427,6 +460,13 @@ div.contact-us >  div:nth-child(2){
     border-radius: 50%;
     width: 150px;
     height: 150px;
+}
+.contact-us-boxes a{
+    color: white;
+    text-decoration: underline;
+}
+.follow-us a{
+    color: white;
 }
 @media screen and (max-width:900px) {
     .follow-us > h4 > a > img{
