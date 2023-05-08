@@ -23,10 +23,21 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+.animation-YEC{
+    /* background: url(images/YEC.png); */
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
 .nav {
     position: absolute;
     top: 0;
-    background-color: #ffe32b;
+    background-color: transparent;
 }
 
 .nav-item {
@@ -56,11 +67,25 @@
     color: black;
 }
 
+
+
 .container-1 {
     background-color: #ffe32b;
     height: 100vh;
+    background-image: url(images/YEC.png);
+    background-position: center;
+    background-position-x: 0px;
+    background-size: cover;
+    animation: infinite_scroll 20s ease-in-out infinite;
 }
-
+@keyframes infinite_scroll{
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: -100vw;
+    }
+}
 .container-2 {
     /* position: absolute; */
     color: white;
