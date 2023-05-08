@@ -1,3 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 .nav {
     position: absolute;
     top: 0;
@@ -91,10 +116,17 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
 .about>div>h1 {
     font-size: 40px;
     border-bottom: 4px solid yellow;
+}
+@media screen and (max-width:500px) {
+    .about{
+        width: 100%;
+    }
+    .about>div>h1{
+        font-size: 35px;
+    }
 }
 
 .about>div>p {
@@ -105,6 +137,7 @@
     background: url(images/timeline.jpg);
     background-size: cover;
     background-repeat: repeat;
+    background-position: center;
     min-height: 300vh;
     color: white;
     display: flex;
@@ -119,7 +152,7 @@
 
 @media screen and (max-width:900px) {
     .timeline-1 img{
-        padding: 10px;
+        padding: 0 10px;
     }
 }
 .incentives{
@@ -155,6 +188,11 @@
     /* margin: 0 10vw; */
     padding: 0 100px;
 }
+@media screen and (max-width:430px){
+    .incentives-boxes{
+        padding: 0 10px;
+    }
+}
 
 .incentives-box {
     width: 279px;
@@ -179,20 +217,31 @@
 }
 .termsNConditions{
     color: white;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px -7px 17px 8px black;
 }
 .termsNConditions h1{
     text-align: center;
     font-size: 64px;
 }
+
 .termsNConditions ul{
     padding: 10px 20vw;
     font-size: 30px;
     line-height: 38px;
+}
+@media screen and (max-width:500px) {
+    .termsNConditions h1{
+        font-size: 42px;
+    }
+    .termsNConditions ul{
+        font-size: 20px;
+        padding: 10px 8vw;
+    }
 }
 .accordion {
     width: 90%;
@@ -255,11 +304,117 @@
 .judging span{
     font-size: 30px;
 }
+.rules{
+    background-color: black;
+}
+.rules h1{
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+.rules ul{
+    padding: 10px 20vw;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+@media screen and (max-width:500px) {
+    .rules h1{
+        font-size: 42px;
+    }
+    .rules ul{
+        padding: 10px 10vw;
+        font-size: 20px;
+    }
+}
 .contact-us{
     background-image: url(./images/contactUs.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    /* background-repeat: no-repeat; */
+    min-height: 65vh;
     background-color: black;
+    background-position: center;
+    color: white;
+    padding: 20px;
     /* box-shadow: inset 5px 17px 9px 1px black,inset -5px -5px 9px black; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
+div.contact-us > div:nth-child(1){
+    width: 60%;
+    height: 65vh;
+    /* border: 2px solid white; */
+}
+div.contact-us >  div:nth-child(2){
+    width: 40%;
+    height: 65vh;
+    /* border: 2px solid purple; */
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width:1000px){
+    .contact-us{
+        flex-direction: column;
+    }
+    div.contact-us > div:nth-child(1){
+        width: 100%;
+        height: fit-content;
+    }
+    div.contact-us >  div:nth-child(2){
+        width: 100%;
+        height: fit-content;
+    }
+    
+}
+.contact-us-boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-us-boxes div{
+    height: 200px;
+    width: 400px;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-us-boxes div> div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us-boxes > div > img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width:900px) {
+    .follow-us > h4 > a > img{
+        width: 40px;
+    }
+    .follow-us{
+        font-size: 10px;
+    }
+    .follow-us h1,.issues h1,.sponsorship h1{
+        font-size: 20px;
+    }
+}
+a{
+    text-decoration: none;
+}
+.issues a, .sponsorship a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
