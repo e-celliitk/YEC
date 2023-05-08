@@ -73,17 +73,17 @@
     background-color: #ffe32b;
     height: 100vh;
     background-image: url(images/YEC.png);
-    background-position: center;
+    background-position: left;
     background-position-x: 0px;
     background-size: cover;
     animation: infinite_scroll 20s ease-in-out infinite;
 }
 @keyframes infinite_scroll{
     from{
-        background-position-x: 0px;
+        background-position-x: 0vw;
     }
     to{
-        background-position-x: -100vw;
+        background-position-x: -99.3vw;
     }
 }
 .container-2 {
@@ -168,6 +168,12 @@
     display: flex;
     flex-direction: column;
     box-shadow: inset;
+}
+.timeline-1 h1{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
 }
 .timeline-1 img{
     padding: 0px 15vw;
@@ -361,7 +367,7 @@
     background-position: center;
     color: white;
     padding: 20px;
-    /* box-shadow: inset 5px 17px 9px 1px black,inset -5px -5px 9px black; */
+    box-shadow: inset 0px 17px 9px 1px black, inset 0px 0px 9px black;
 
     display: flex;
     flex-direction: row;
