@@ -87,14 +87,14 @@ body{
     background-position-x: 0px;
     background-attachment: fixed;
     background-size: cover;
-    animation: infinite_scroll 10s linear infinite;
+    animation: infinite_scroll 70s linear infinite;
 }
 @keyframes infinite_scroll{
     from{
         background-position-x: 0vw;
     }
     to{
-        background-position-x: -99.3vw;
+        background-position-x: -2002vh;
     }
 }
 .container-2 {
