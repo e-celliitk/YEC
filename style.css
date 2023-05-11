@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 html{
     scroll-behavior: smooth;
@@ -97,7 +97,10 @@ body{
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
-.container-1 > a{
+.container-1-inner{
+    height: 100%;
+}
+.container-1-inner > a{
     color:black;
     text-decoration: none;
     font-size: 20px;
@@ -106,7 +109,7 @@ body{
     margin-bottom: 20px;
 
 }
-.container-1 > a > span{
+.container-1-inner > a > span{
     background-color: #ffe32b;
     border-radius: 12px;
     position: relative;
@@ -116,6 +119,7 @@ body{
     border: 2px solid black;
     padding: 2px 11px;
     font-weight: bold;
+    cursor: pointer;
 }
 @keyframes infinite_scroll{
     from{
@@ -144,8 +148,9 @@ body{
 .YEC {
     margin: auto 0;
     margin-left: 10vh;
-    height: 90%;
+    height: 55%;
     display: flex;
+    justify-content:flex-end;
     align-items: flex-start;
     font-family: 'Poppins';
     font-style: normal;
@@ -154,7 +159,6 @@ body{
     line-height: 82px;
     color: #000000;
     flex-direction: column;
-    justify-content: center;
     font-family: 'Poppins', sans-serif;
 
 }
