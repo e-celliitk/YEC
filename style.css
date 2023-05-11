@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     outline: 0;
+    font-family: cursive;
 }
 html{
     scroll-behavior: smooth;
@@ -46,13 +48,15 @@ body{
 .nav {
     position: fixed;
     top: 0;
-    background-color: transparent;
-    
+    left: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    /* z-index: 100; */
 }
 
 .nav-item {
     margin: auto 3vw;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 16px;
 }
@@ -85,12 +89,13 @@ body{
     background-image: url(images/YEC.png);
     background-position: left;
     background-position-x: 0px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     animation: infinite_scroll 70s linear infinite;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
 }
 .container-1 > a{
     color:black;
@@ -133,6 +138,7 @@ body{
     display: flex;
     justify-self: center;
     background-color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .YEC {
@@ -141,14 +147,15 @@ body{
     height: 90%;
     display: flex;
     align-items: flex-start;
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 82px;
     color: #000000;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -169,13 +176,18 @@ body{
 
 .container-3 {
     /* width: 100%; */
-    background: url(images/ran-berkovich-kSLNVacFehs-unsplash\ 1.png);
+    background-color: #ffffff;
+/* background-image: linear-gradient(0deg, #ffffff 0%, #ffe32b 100%); */
+    /* background: url(images/ran-berkovich-kSLNVacFehs-unsplash\ 1.png); */
+    /* background: url(images/upstart.jpg); */
+    backdrop-filter: opacity(0.5);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     color: white;
     padding: 10vw;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 .symbols{
     position: absolute;
@@ -185,7 +197,7 @@ body{
     z-index: 10;
     height: 100vh;
     width: 100vw;
-    background:url(./images/symbols.png);
+    /* background:url(./images/symbols.png); */
     background-repeat: no-repeat;
     background-size: 80vw;
 }
@@ -206,10 +218,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: black;
+    font-family: 'Poppins', sans-serif;
 }
 .about>div>h1 {
     font-size: 40px;
     border-bottom: 4px solid yellow;
+    text-align: left;
 }
 @media screen and (max-width:500px) {
     .about{
@@ -230,15 +245,16 @@ body{
 }
 
 .timeline-1 {
-    background: url(images/timeline\ \(1\)\ \(2\).jpg);
+    /* background: url(images/timeline\ \(1\)\ \(2\).jpg); */
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    min-height: 300vh;
+    min-height: 200vh;
     color: white;
     display: flex;
     flex-direction: column;
-    box-shadow: inset;
+    font-family: 'Poppins', sans-serif;
+    /* box-shadow: inset; */
 }
 .timeline-1 h1{
     color: black;
@@ -259,12 +275,14 @@ body{
 }
 .incentives{
     height: 100%;
+    background-color: black;
+    
 }
 .incentives h1 {
     text-align: center;
     font-weight: 700px;
+    color: white;
     /* font-size: 64px; */
-    color: black;
 }
 
 .incentives h1:nth-child(1) {
@@ -300,7 +318,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width:430px){
+@media screen and (max-width:630px){
     .incentives-boxes{
         padding: 0 10px;
     }
@@ -330,26 +348,53 @@ body{
     text-align: center;
 }
 .termsNConditions{
-    color: white;
-    /* min-height: 100vh; */
-    background-color: black;
+    color: black;
+    min-height: 80vh;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0px -7px 17px 8px black;
+    /* box-shadow: 0px -7px 17px 8px black; */
+
 }
-.termsNConditions h1{
+.termsNConditions-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.termsNConditions img{
+    width: 30%;
+}
+.termsNConditions > div > h1{
     text-align: center;
     font-size: 64px;
 }
 
 .termsNConditions ul{
-    padding: 10px 20vw;
+    /* padding: 10px 20vw; */
     font-size: 30px;
     line-height: 38px;
+    width: 60%;
 }
+/* .termsNConditions > div > img{
+    width: 400px;
+    height: 300px;
+} */
+@media screen and (max-width:920px) {
+    .termsNConditions-box{
+        flex-direction: column;
+    }
+    .termsNConditions > div >  img{
+        width: 80%;
+    }
+    .termsNConditions ul{
+        width: 95%;
+    }
+}
+
 @media screen and (max-width:500px) {
-    .termsNConditions h1{
+    .termsNConditions > div > h1{
         font-size: 26px;
     }
     .termsNConditions ul{
@@ -360,7 +405,7 @@ body{
     }
 }
 .accordion {
-    width: 90%;
+    width: 60%;
     max-width: 1000px;
     margin: 2rem auto;
   }
@@ -409,10 +454,20 @@ body{
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
 .judging{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     min-height: 100vh
 }
+.judging-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.judging-box img{
+    width: 30%;
+}
+
 .judging h1{
     text-align: center;
     font-size: 64px;
@@ -422,17 +477,52 @@ body{
 }
 .rules{
     background-color: black;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .rules h1{
     font-size: 64px;
     text-align: center;
     color: white;
 }
-.rules ul{
-    padding: 10px 20vw;
+.rules-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.rules-box img{
+    width: 30%;
+}
+.rules-box ul{
+    width: 60%;
     font-size: 30px;
     color: white;
+    font-weight: lighter;
     margin: 0;
+}
+@media screen and (max-width:900px) {
+    .rules-box{
+        flex-direction: column-reverse;
+    }
+    .rules-box img{
+        width:80%
+    }
+    .rules-box ul{
+        width: 95%;
+    }
+    .judging-box{
+        flex-direction: column;
+    }
+    .judging-box img{
+        display: none;
+    }
+    .accordion{
+        width: 95%;
+    }
 }
 @media screen and (max-width:500px) {
     .rules h1{
@@ -448,7 +538,7 @@ body{
     }
 }
 .contact-us{
-    background-image: url(./images/contactUs.png);
+    /* background-image: url(./images/contactUs.png); */
     background-size: cover;
     /* background-repeat: no-repeat; */
     min-height: 75vh;
@@ -552,6 +642,9 @@ a{
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
+  }
+  .contact-us-boxes > div >span{
+    color: yellow;
   }
 
 
