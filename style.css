@@ -529,6 +529,10 @@ body {
     font-size: 30px;
 }
 
+/* .accordion{
+    font-size: 10px;
+} */
+
 .rules {
     background-color: black;
     min-height: 80vh;
@@ -576,6 +580,10 @@ body {
         width: 95%;
     }
 
+    .judging{
+        min-height: 60vh;
+    }
+
     .judging-box {
         flex-direction: column;
     }
@@ -586,7 +594,9 @@ body {
 
     .accordion {
         width: 95%;
+        font-size: 10px;
     }
+    
 }
 
 @media screen and (max-width:500px) {
@@ -665,30 +675,35 @@ div.contact-us>div:nth-child(2) {
 }
 
 .contact-us-boxes div {
-    height: 200px;
-    width: 400px;
+    height: 140px;
+    /* width: 200px; */
     /* border: 2px solid red; */
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .contact-us-boxes div>div {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-
-.contact-us-boxes>div>img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.contact-us-boxes div > span{
+    text-align: center;
 }
+/* .contact-us-boxes>div>img { */
+    /* border-radius: 50%; */
+    /* width: 150px; */
+    /* height: 150px; */
+/* } */
 
 .contact-us-boxes a {
     color: white;
     text-decoration: underline;
+    text-align: center;
 }
 
 .follow-us a {
@@ -735,6 +750,7 @@ a {
 
 .contact-us-boxes>div>span {
     color: yellow;
+    font-weight: bolder;
 }
 
 .tilted-glass-1 {
