@@ -19,6 +19,9 @@ nav ul {
   display: flex;
   gap: 2rem;
 }
+#nav-bar{
+  margin: 0;
+}
 nav a {
   font-size: 20px;
   text-decoration: none;
