@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 * {
     margin: 0;
@@ -165,7 +166,7 @@ body {
     align-items: flex-start;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 64px;
     line-height: 82px;
     color: #000000;
@@ -245,14 +246,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     color: black;
-    font-family: 'Poppins', sans-serif;
 }
 
 .about>div>h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     border-bottom: 4px solid yellow;
     text-align: left;
 }
+
 
 @media screen and (max-width:500px) {
     .about {
@@ -272,6 +274,7 @@ body {
 
 .about>div>p {
     font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .timeline-1 {
@@ -506,7 +509,7 @@ body {
 .judging {
     background-color: white;
     color: black;
-    min-height: 100vh
+    min-height: 80vh;
 }
 
 .judging-box {
@@ -563,7 +566,7 @@ body {
     width: 60%;
     font-size: 30px;
     color: white;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin: 0;
 }
 
@@ -624,6 +627,7 @@ body {
     min-height: 70vh;
     background-color: black;
     display: flex;
+    padding: 20px 10px;
 }
 .contact-us h1{
     color: white;
@@ -659,7 +663,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 }
 .team{
@@ -669,9 +673,11 @@ body {
 }
 .team .name{
     text-align: center;
+    height: 150px;
 }
 .name p{
     color: yellow;
+    margin-bottom: 0;
 }
 .name h3{
     color: yellow;
