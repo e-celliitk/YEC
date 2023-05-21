@@ -1,18 +1,24 @@
 a{
   text-decoration: none;
-  color: white;
+  color: white; /* <- its affecting contactus a color too */
+}
+nav a{
+  text-decoration: none;
+  color: black;
 }
 header {
   position: fixed;
   width: 100%;
-  background-color: #0d0d0d;
+  background-color: transparent;
   padding: 0px 20px;
   z-index: 1000;
+  transition: background-color 500ms ease-in-out;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 55px;
 }
 nav ul {
   list-style: none;
@@ -23,8 +29,9 @@ nav ul {
   margin: 0;
 }
 nav a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
+  /* margin: 0 16px; */
 }
 nav a#logo {
   color: #000000;
@@ -66,7 +73,7 @@ nav ul.active {
   } */
   #ham-menu {
     display: block;
-    color: #eaff00;
+    color: black;
   }
   nav a#logo,
   #ham-menu {
