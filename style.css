@@ -177,9 +177,9 @@ body {
 
 @media screen and (max-width:900px) {
     .YEC {
-        font-size: 29px;
+        font-size: 35px;
         margin-left: 5px;
-        line-height: 30px;
+        line-height: 63px;
     }
 
     .YEC span {
@@ -597,7 +597,11 @@ body {
 
     .accordion {
         width: 95%;
+        font-size: 13px;
+    }
+    .accordion-item-body-content{
         font-size: 10px;
+        font-weight: bold;
     }
     
 }
@@ -646,6 +650,23 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.team .name{
+    text-align: center;
+    height: 150px;
+}
+.name p{
+    color: yellow;
+    margin-bottom: 0;
+}
+.name h3{
+    color: yellow;
+}
 @media screen and (max-width:700px) {
     .contact-us{
         flex-direction: column;
@@ -665,32 +686,18 @@ body {
         justify-content: space-between;
         /* margin-left: 20px; */
     }
+    .team .name{
+        height: 80px;
+    }
 }
-.team{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-.team .name{
-    text-align: center;
-    height: 150px;
-}
-.name p{
-    color: yellow;
-    margin-bottom: 0;
-}
-.name h3{
-    color: yellow;
-}
-
 @media screen and (max-width:900px) {
     .follow-us>h4>a>img {
         width: 40px;
     }
 
-    .follow-us {
-        font-size: 10px;
-    }
+    /* .follow-us {
+        font-size: 15px;
+    } */
 
     .follow-us h1,
     .issues h1,
@@ -752,4 +759,12 @@ a {
     transform: rotate(-25deg);
     z-index: 19;
 
+}
+.heading{
+    font-size: 40px !important;
+    font-weight: bold;
+}
+.contact-heading{
+    font-size: 32px !important;
+    /* font-weight: bold; */
 }
