@@ -696,6 +696,7 @@ body {
 }
 .contact-us h1{
     color: white;
+    font-size: 30px;
 }
 .contact-us > div:nth-child(1){
     width: 60%;
@@ -738,6 +739,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 10px;
     }
     
     .contact-us > div:nth-child(2){
@@ -763,7 +765,20 @@ body {
     .follow-us h1,
     .issues h1,
     .sponsorship h1 {
-        font-size: 20px;
+        font-size: 23px;
+    }
+    .issues > div > a{
+        font-size: 15px;
+    }
+    .sponsorship > div > a{
+        font-size: 15px;
+    }
+    .name h3{
+        color: yellow;
+        font-size: 17px;
+    }
+    .name p{
+        font-size: 10px;
     }
 }
 
@@ -826,6 +841,66 @@ a {
     font-weight: bold;
 }
 .contact-heading{
-    font-size: 32px !important;
+    /* font-size: 32px !important; */
     /* font-weight: bold; */
 }
+
+.register-now{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: light;
+    border: 2px solid black;
+    color: rgb(244, 244, 181);
+}
+.register-now:hover{
+    box-shadow: 2px black;
+    color: white;
+}
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    color: #e8e7de;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+  }
+  #button-2 {
+    /* position: relative; */
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #button-2 a {
+    /* position: relative; */
+    transition: all .35s ease-Out;
+    color: white;
+    z-index: 30;
+  }
+  #slide {
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    background: #f4f403;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+  
+  #button-2:hover #slide {
+    left: 0;
+  }
