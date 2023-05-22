@@ -22,7 +22,7 @@
 <body>
     <header>
         <nav>
-            <a class="navbar-brand" href="https://www.ecelliitk.org/" id="logo">
+            <a class="navbar-brand"  href="https://www.ecelliitk.org/" id="logo">
                 <div>
                     <img src="./images/logo_E cell 1 (3).png" class="d-inline-block align-top" alt="" height="40px">
                 </div>
@@ -32,6 +32,9 @@
             </a>
             <i class="fas fa-bars" id="ham-menu"></i>
             <ul id="nav-bar">
+                <li>
+                    <i class="fas fa-times bar-inside" id="ham-menu"></i>
+                </li>
                 <li>
                     <a href="#about">ABOUT</a>
                 </li>
@@ -48,6 +51,7 @@
                     <a href="https://forms.gle/vGv3Gaq9kd7qsK1T8">REGISTER</a>
                 </li>
             </ul>
+            <!-- <div class="black-bar"></div> -->
         </nav>
     </header>
     <div class="container-1">
@@ -157,7 +161,7 @@
                     <div>
                         <img src="./images/Scholarship.png" alt="Scholarship">
                     </div>
-                    <div>Prizes worth 3 lakhs</div>
+                    <div>Prizes worth 10 lakhs</div>
                 </div>
                 <div class="incentives-box">
                     <div>
@@ -202,7 +206,7 @@
                 </li>
                 <li>
 
-                    Click on the 'Register Now' button to sign up to UpSpark. Only the team leader has to register for
+                    Click on the 'Register Now' button to sign up to YEC. Only the team leader has to register for
                     each
                     team.
                 </li>
@@ -513,6 +517,7 @@
         logoText.style.color = "white"
                 header.style.backgroundColor = "black"
                 targetEls.forEach((ele)=>{
+                    if(ele.querySelector('a'))
             ele.querySelector('a').style.color = "yellow";
         })
         });

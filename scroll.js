@@ -12,12 +12,14 @@ function scrollFunction(){
         navElement.style.backgroundColor = "transparent"
         logoText.style.color = "black"
         targetEls.forEach((ele)=>{
+            if(ele.querySelector('a'))
             ele.querySelector('a').style.color = "black";
         })
     }else{
         navElement.style.backgroundColor = "black"
         logoText.style.color = "white"
         targetEls.forEach((ele)=>{
+            if(ele.querySelector('a'))
             ele.querySelector('a').style.color = "yellow";
         })
     }
