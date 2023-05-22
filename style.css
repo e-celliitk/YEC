@@ -407,6 +407,11 @@ body {
     margin: 50px;
     display: flex;
     flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+.incentives-box:hover {
+    transform:translateY(-10px);
+    opacity:0.9;
 }
 
 @media screen and (max-width:630px) {

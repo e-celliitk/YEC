@@ -491,10 +491,20 @@
         let hamMenuIcon = document.getElementById("ham-menu");
         let navBar = document.getElementById("nav-bar");
         let navLinks = navBar.querySelectorAll("li");
+        let header = document.querySelector('header')
+        var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+        var targetEls = document.querySelector("#nav-bar").querySelectorAll('li')
+        var logoText = document.querySelector('.logo-text')
+
 
         hamMenuIcon.addEventListener("click", () => {
             navBar.classList.toggle("active");
             hamMenuIcon.classList.toggle("fa-times");
+        logoText.style.color = "white"
+                header.style.backgroundColor = "black"
+                targetEls.forEach((ele)=>{
+            ele.querySelector('a').style.color = "yellow";
+        })
         });
         navLinks.forEach((navLinks) => {
             navLinks.addEventListener("click", () => {

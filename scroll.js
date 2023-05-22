@@ -7,21 +7,18 @@ function scrollFunction(){
     // console.log(targetEls);
     var logoText = document.querySelector('.logo-text')
     // console.log(logoText)
-    if(scrollTop > 200){
-        // console.log(navElement)
-        navElement.style.backgroundColor = "black"
-        // document.querySelector('.logo-text').style.color = "black"
-        logoText.style.color = "white"
-        targetEls.forEach((ele)=>{
-            ele.querySelector('a').style.color = "white";
-            // console.log(ele.querySelector('a'));
-        })
-    }else{
+    var width = window.innerWidth;
+    if(scrollTop < 200 && width > 800){
         navElement.style.backgroundColor = "transparent"
-        // document.querySelector('.logo-text').style.color = "white"
         logoText.style.color = "black"
         targetEls.forEach((ele)=>{
             ele.querySelector('a').style.color = "black";
+        })
+    }else{
+        navElement.style.backgroundColor = "black"
+        logoText.style.color = "white"
+        targetEls.forEach((ele)=>{
+            ele.querySelector('a').style.color = "yellow";
         })
     }
 

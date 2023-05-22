@@ -57,7 +57,7 @@ section#home {
   display: none;
 }
 nav ul.active {
-  left: 0;
+  right: 0;
 }
 @media only screen and (max-width: 991px) {
   html {
@@ -73,7 +73,7 @@ nav ul.active {
   } */
   #ham-menu {
     display: block;
-    color: black;
+    color: white;
   }
   nav a#logo,
   #ham-menu {
@@ -82,7 +82,7 @@ nav ul.active {
   nav ul {
     background-color: black;
     position: fixed;
-    left: -100vw;
+    right: -100vw;
     top: 73.6px;
     width: 100vw;
     height: calc(100vh - 73.6px);
@@ -92,17 +92,25 @@ nav ul.active {
     justify-content: space-around;
     transition: 1s;
     gap: 0;
+      top: 55.18px;
+      height: calc(100vh - 44.18px);
+      width: 165px;
+    
   }
 }
 @media only screen and (max-width: 575px) {
   /* html {
     font-size: 46.87%;
   } */
+  nav a{
+    color: white;
+  }
   header {
     padding: 0px 20px;
   }
   nav ul {
-    top: 65.18px;
-    height: calc(100vh - 65.18px);
+    top: 55.18px;
+    height: calc(100vh - 44.18px);
+    width: 165px;
   }
 }
