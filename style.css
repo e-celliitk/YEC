@@ -773,6 +773,7 @@ a {
 .register-now{
     width: fit-content;
     padding: 6px;
+    margin-bottom: 30px;
     /* border: 1px solid black; */
     border-radius: 21px;
     position: absolute;
@@ -793,10 +794,11 @@ a {
 }
 @media screen and (max-width:700px) {
     .register-now{
-        width: 130px;
+        width: 150px;
     font-size: 18px;
     height: 48px;
     transform: translateX(-13px) scaleY(1.2);
+    padding: 10px 10px 10px 15px;
     }
     
 }
