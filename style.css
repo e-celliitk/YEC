@@ -803,8 +803,8 @@ a {
 .register-now:hover{
     box-shadow: 0px 1px 18px #018524;
     text-decoration: none;
-    color: rgb(208, 54, 37);
-    background: linear-gradient(to right, #92f25f, #11c461);
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom right, #aebaf8,#9600FF);
     transition: .1s ease;
 }
 .button {
